@@ -1,0 +1,16 @@
+(G,*) is Groupid
+G is set
+*:G×G->G
+(∀x,y,z∈G)(x*y)*z=x*(y*z)
+
+Let e1, e2 ∈ G
+
+G=(G,*,e,') is Group
+*:G×G->G
+(∀x,y,z)(x*y)*z=x*(y*z)
+(∀x)(x*e = e*x = x)
+(∀x)(x*x' = x'*x)
+
+G=(G,*,e,') is Abel Group
+G is Group
+(∀x,y)(x*y = y*x)

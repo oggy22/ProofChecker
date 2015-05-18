@@ -1,0 +1,4 @@
+Warnings:
+NEG NEG is shortened
+Unused variable under quantifier for all/exists.
+{x e A | logexpr } - logexpr should contain x

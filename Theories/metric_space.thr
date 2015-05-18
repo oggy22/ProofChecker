@@ -1,0 +1,18 @@
+#include <real_numbers.thr>
+
+M = (M,d) is metric space
+M is set
+d:M×M->R
+(∀x,y) d(x,y)>=0
+(∀x,y) d(x,y)=0 iff x=y
+(∀x,y) d(x,y)=d(y,x)
+(∀x,y,z) d(x,y)+d(x,y)>=d(x,z)
+
+Example (R,d), d=|x-y|
+
+// continuos functions f:[a,b]->R
+Example
+Let a,b ∈ R
+C=(C,d)
+C={f:[a,b]->R | f is continous }
+d:C×C->R d(f,g) = integral(a,b,f-g)

@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Theories", "Theories", "{C2C0D9C7-0076-4F35-B94E-DCF654495C05}"
+	ProjectSection(SolutionItems) = preProject
+		Theories\functions.thr = Theories\functions.thr
+		Theories\geometry.thr = Theories\geometry.thr
+		Theories\groupoid.thr = Theories\groupoid.thr
+		Theories\groups.thr = Theories\groups.thr
+		Theories\groups2.thr = Theories\groups2.thr
+		Theories\natural_numbers.thr = Theories\natural_numbers.thr
+		Theories\operations.thr = Theories\operations.thr
+		Theories\relations.thr = Theories\relations.thr
+		Theories\rings.thr = Theories\rings.thr
+		Theories\test.thr = Theories\test.thr
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProofChecker", "ProofChecker\ProofChecker.vcxproj", "{C1E631BC-8800-40AC-919C-D6A81C39377E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProofCheckerEditor", "ProofCheckerEditor\ProofCheckerEditor.csproj", "{DCC48B42-F6C1-4D86-8EA7-761B99DDB8AF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C1E631BC-8800-40AC-919C-D6A81C39377E} = {C1E631BC-8800-40AC-919C-D6A81C39377E}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProofCheckerTest", "ProofCheckerTest\ProofCheckerTest.vcxproj", "{37D17CC0-FAA7-4706-9EB3-D25794376805}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C1E631BC-8800-40AC-919C-D6A81C39377E} = {C1E631BC-8800-40AC-919C-D6A81C39377E}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1E631BC-8800-40AC-919C-D6A81C39377E}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{C1E631BC-8800-40AC-919C-D6A81C39377E}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{C1E631BC-8800-40AC-919C-D6A81C39377E}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{C1E631BC-8800-40AC-919C-D6A81C39377E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C1E631BC-8800-40AC-919C-D6A81C39377E}.Debug|Win32.Build.0 = Debug|Win32
+		{C1E631BC-8800-40AC-919C-D6A81C39377E}.Release|Any CPU.ActiveCfg = Release|Win32
+		{C1E631BC-8800-40AC-919C-D6A81C39377E}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{C1E631BC-8800-40AC-919C-D6A81C39377E}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{C1E631BC-8800-40AC-919C-D6A81C39377E}.Release|Win32.ActiveCfg = Release|Win32
+		{C1E631BC-8800-40AC-919C-D6A81C39377E}.Release|Win32.Build.0 = Release|Win32
+		{DCC48B42-F6C1-4D86-8EA7-761B99DDB8AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCC48B42-F6C1-4D86-8EA7-761B99DDB8AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCC48B42-F6C1-4D86-8EA7-761B99DDB8AF}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DCC48B42-F6C1-4D86-8EA7-761B99DDB8AF}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DCC48B42-F6C1-4D86-8EA7-761B99DDB8AF}.Debug|Mixed Platforms.Deploy.0 = Debug|Any CPU
+		{DCC48B42-F6C1-4D86-8EA7-761B99DDB8AF}.Debug|Win32.ActiveCfg = Debug|Any CPU
+		{DCC48B42-F6C1-4D86-8EA7-761B99DDB8AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCC48B42-F6C1-4D86-8EA7-761B99DDB8AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCC48B42-F6C1-4D86-8EA7-761B99DDB8AF}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DCC48B42-F6C1-4D86-8EA7-761B99DDB8AF}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DCC48B42-F6C1-4D86-8EA7-761B99DDB8AF}.Release|Win32.ActiveCfg = Release|Any CPU
+		{37D17CC0-FAA7-4706-9EB3-D25794376805}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{37D17CC0-FAA7-4706-9EB3-D25794376805}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{37D17CC0-FAA7-4706-9EB3-D25794376805}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{37D17CC0-FAA7-4706-9EB3-D25794376805}.Debug|Mixed Platforms.Deploy.0 = Debug|Win32
+		{37D17CC0-FAA7-4706-9EB3-D25794376805}.Debug|Win32.ActiveCfg = Debug|Win32
+		{37D17CC0-FAA7-4706-9EB3-D25794376805}.Debug|Win32.Build.0 = Debug|Win32
+		{37D17CC0-FAA7-4706-9EB3-D25794376805}.Release|Any CPU.ActiveCfg = Release|Win32
+		{37D17CC0-FAA7-4706-9EB3-D25794376805}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{37D17CC0-FAA7-4706-9EB3-D25794376805}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{37D17CC0-FAA7-4706-9EB3-D25794376805}.Release|Win32.ActiveCfg = Release|Win32
+		{37D17CC0-FAA7-4706-9EB3-D25794376805}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

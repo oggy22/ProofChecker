@@ -1,0 +1,12 @@
+#include <groups.thr>
+
+R=(R,+,0,*,1) is Ring
+(R,+,0) is Abelian Group
+(R,*,1) is Group
+(∀x,y,z)(x*(y+z) = x*y + x*z)
+
+A1. P=(P,+,0,*,1) is Field
+A2. P is Ring
+A3. (P,*,1) is Abelian Group
+
+//set

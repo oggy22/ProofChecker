@@ -1,0 +1,6 @@
+(G, A, *, +, e) is Group
+G is set
+A is set
++:A×A->A
+*:A×A->A
+e∈A

@@ -1,0 +1,5 @@
+(G,*,e) is Group
+G is set
+*:G×G->G
+e∈G
+(∀x∈G)(x=x)

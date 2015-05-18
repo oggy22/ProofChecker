@@ -1,0 +1,11 @@
+// *** Operations ***
+Let A is set
+
+Let *:A×A->A
+Def. * is associative iff (∀x,y,z∈A) (x*y)*z=x*(y*z)
+Def. * is commutative iff (∀x,y∈A)(x*y=y*x)Let *:A×A->A
+
+Let e1, e2 in A
+
+Let +:A×A->A
+Def. (*,+) is distributive iff (∀x,y,z∈A) (x+y)*z=(x*z)+(y*z)

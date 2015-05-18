@@ -1,0 +1,4 @@
+﻿(G,*) is Groupid
+G is set
+*:G×G->G
+(∀x,y,z∈G)(x*y)*z=x*(y*z)

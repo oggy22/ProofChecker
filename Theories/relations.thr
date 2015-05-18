@@ -1,0 +1,13 @@
+// *** Relations ***
+Let A is set
+r∈P(AxA)
+
+// Basic relation properties
+Def. r is reflexive iff (∀x∈A) (x r x)
+Def. r is antisymetric iff (∀x,y∈A) (x r y => y r x)
+Def. r is symetric iff (∀x,y∈A) (x r y => y r x)
+Def. r is transitive iff (∀x,y,z∈A) (x r y ∧ y r z => x r z)
+
+Def. r is equavalency iff r is reflexive, symetric, transitive
+Def. r is order iff r is reflexive, antisymetric, transitive
+Def. r is complete-order iff r is order ∧ (∀x,y∈A) (x r y ∨ y r x)

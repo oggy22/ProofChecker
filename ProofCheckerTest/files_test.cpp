@@ -17,7 +17,6 @@ namespace ProofCheckerTest
 		TEST_METHOD(file_group_test)
 		{
 			test("group.thr");
-
 		}
 	};
 }

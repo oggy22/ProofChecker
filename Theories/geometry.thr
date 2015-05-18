@@ -1,0 +1,14 @@
+E = (E, L, P, B)
+E is set
+L⊆P(E)
+P⊆P(E)
+B⊆E×E×E
+
+(∀A,B)(∃p∈L)(A,B∈p)
+(∀A,B)(A≠B => (∃1p∈L)(A,B∈p))
+(∀A,B,C)(∃a∈P)(A,B∈p)
+(∀A,B,C)(A≠B => (∃1a∈L)(A,B∈p))
+(∀A,B,C)(∃a∈P)(A,B∈p)
+(∀A,B,C)(A≠B => (∃1a∈L)(A,B∈p))
+
+// Axioms 25

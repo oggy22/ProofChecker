@@ -1,0 +1,20 @@
+// *** Functions *** 
+Let A, B is set
+Let f:A->B
+Def. f is injection <=> (∀x,y∈A) x≠y then f(x)≠f(y)
+Def. f is surjection <=> (∀y∈B)(∃x∈A) f(x)=y
+Def. f is bijection <=> f is injection ∧ f is surjection
+
+Theorem (∃f:A->B)(f is injection) iff (∃g:B->A)(f is surjection)
+Proof.
+  Suppose (∃f:A->B)(f is injection)
+    Let f:A->B | f is injection
+    Let B'={y∈B|(∃x∈A)f(x)=y}
+    (∀y∈B')(∃1x∈A)f(x)=y
+    Let g':B'->A |
+    Let g:B->A | (∀y∈B')g'(y)=g(g)
+  Suppose (∃g:B->A)(g is surjection)
+    Let g:B->A | g is surjection
+    Let f:A->B | (∀x∈A)g(f(x))=x
+    Let x,y∈A
+    (x≠y => f(x)=f(y)

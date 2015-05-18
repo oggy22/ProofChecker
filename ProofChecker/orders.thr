@@ -1,0 +1,5 @@
+﻿(A,<)
+< is reflexive
+< is antisymetric
+< is transitive
+(∀x,y)(x<y and y<x then x=y)
