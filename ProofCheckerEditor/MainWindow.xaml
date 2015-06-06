@@ -57,18 +57,18 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Button Content="∀" Grid.Row="0" Grid.Column="0" FontSize="18" Click="InsertButtonClicked"/>
-            <Button Content="∃" Grid.Row="0" Grid.Column="1" FontSize="18" Click="InsertButtonClicked"/>
-            <Button Content="∈" Grid.Row="0" Grid.Column="2" FontSize="18" Click="InsertButtonClicked"/>
-            <Button Content="∧" Grid.Row="0" Grid.Column="3" FontSize="18" Click="InsertButtonClicked"/>
-            <Button Content="∨" Grid.Row="0" Grid.Column="4" FontSize="18" Click="InsertButtonClicked"/>
-            <Button Content="⊆" Grid.Row="0" Grid.Column="5" FontSize="18" Click="InsertButtonClicked"/>
-            <Button Content="×" Grid.Row="0" Grid.Column="6" FontSize="18" Click="InsertButtonClicked"/>
-            <Button Content="α" Grid.Row="0" Grid.Column="7" FontSize="18" Click="InsertButtonClicked"/>
-            <Button Content="β" Grid.Row="0" Grid.Column="8" FontSize="18" Click="InsertButtonClicked"/>
-            <Button Content="∪" Grid.Row="0" Grid.Column="9" FontSize="18" Click="InsertButtonClicked"/>
-            <Button Content="∩" Grid.Row="0" Grid.Column="10" FontSize="18" Click="InsertButtonClicked"/>
-            <Button Content="≠" Grid.Row="0" Grid.Column="11" FontSize="18" Click="InsertButtonClicked"/>
+			<Button Content="∀" Grid.Row="0" Grid.Column="0" FontSize="18" Click="InsertButtonClicked" ToolTip="For each"/>
+			<Button Content="∃" Grid.Row="0" Grid.Column="1" FontSize="18" Click="InsertButtonClicked"  ToolTip="There exists"/>
+			<Button Content="∈" Grid.Row="0" Grid.Column="2" FontSize="18" Click="InsertButtonClicked"  ToolTip="element"/>
+			<Button Content="∧" Grid.Row="0" Grid.Column="3" FontSize="18" Click="InsertButtonClicked"  ToolTip="Logical AND"/>
+			<Button Content="∨" Grid.Row="0" Grid.Column="4" FontSize="18" Click="InsertButtonClicked"  ToolTip="Logical OR"/>
+			<Button Content="⊆" Grid.Row="0" Grid.Column="5" FontSize="18" Click="InsertButtonClicked"  ToolTip="Subset"/>
+			<Button Content="×" Grid.Row="0" Grid.Column="6" FontSize="18" Click="InsertButtonClicked"  ToolTip="Cartesian product"/>
+			<Button Content="α" Grid.Row="0" Grid.Column="7" FontSize="18" Click="InsertButtonClicked" ToolTip="alpha"/>
+			<Button Content="β" Grid.Row="0" Grid.Column="8" FontSize="18" Click="InsertButtonClicked"  ToolTip="beta"/>
+			<Button Content="∪" Grid.Row="0" Grid.Column="9" FontSize="18" Click="InsertButtonClicked"  ToolTip="Union"/>
+			<Button Content="∩" Grid.Row="0" Grid.Column="10" FontSize="18" Click="InsertButtonClicked"  ToolTip="Intersection"/>
+			<Button Content="≠" Grid.Row="0" Grid.Column="11" FontSize="18" Click="InsertButtonClicked"  ToolTip="Not Equal"/>
         </Grid>
         
         <Grid Grid.Row="2">

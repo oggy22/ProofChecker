@@ -22,7 +22,11 @@ class lexer_t
 	std::pair<token_enum, wstring> current, peeked;
 
 public:
-	lexer_t(char const * const filename, const char * const tokens_filename=nullptr) : reader(filename), line(1), column(1), is_peeked(false)
+	lexer_t(char const * const filename, const char * const tokens_filename=nullptr)
+		: reader(filename),
+		line(1),
+		column(1),
+		is_peeked(false)
 	{
 		if (tokens_filename)
 			ftokens.open(tokens_filename);
