@@ -122,12 +122,18 @@ public:
 
 		wchar_t curr_char = reader.get();
 
-#define RETURN(a,b) return std::make_pair(a,b)
 
-#define CHECK(c, tok)						\
-		if (curr_char == c)					\
-		{									\
-			RETURN(tok, std::wstring()+c);	\
+#define RETURN(a, b)	\
+		{											\
+			if (ftokens.is_open())			\
+				ftokens << a << " " << std::wstring(b).length() << endl;		\
+			return std::make_pair(a, b);	\
+		}
+
+#define CHECK(c, tok)							\
+		if (curr_char == c)						\
+		{												\
+			RETURN(tok, (std::wstring()+c));	\
 		}
 
 		//∀∃∈∧∨⊆×αβ∪∩≠
@@ -157,7 +163,7 @@ public:
 		{															\
 			if (curr_char == *ptr)									\
 			{														\
-				RETURN(tok, std::wstring() + *ptr);	\
+				RETURN(tok, (std::wstring() + *ptr));				\
 			}														\
 		}
 		CHECK(L"*+", token_enum::BIN_OPERATION);

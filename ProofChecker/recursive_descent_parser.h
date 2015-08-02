@@ -177,11 +177,11 @@ public:
 
 		expect(token_enum::NAME);
 		const wstring &wname = lexer.curr_token().second;
-		theory *p_theory = new theory(vars.size(), string(wname.begin(), wname.end()));
+		theory *p_theory = new theory((int)(vars.size()), string(wname.begin(), wname.end()));
 		int i = 0;
 		std::for_each(vars.begin(), vars.end(), [&vars, p_theory, this](std::wstring &ws)
 		{
-			int i = (&ws) - (&vars[0]);
+			int i = (int)((&ws) - (&vars[0]));
 			base_type& bt = p_theory->operator[](i);
 			this->var_manager.add(ws, &bt);
 		});

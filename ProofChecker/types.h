@@ -158,7 +158,7 @@ public:
 	std::vector<log_expression*> axioms;
 	std::vector<log_expression*> theorems;
 
-	int size() const
+	size_t size() const
 	{
 		return vars.size();
 	}

@@ -19,7 +19,7 @@ namespace ProofCheckerTest
 			fout.close();
 
 			// Exercise the lexer and compare it agains expected tokens
-			lexer_t lexer("test.thr");
+			lexer_t lexer("test.thr", "tokens.txt");
 			std::pair<token_enum, std::wstring> token;
 			for (const auto& token : tokens)
 			{
@@ -30,6 +30,19 @@ namespace ProofCheckerTest
 				Assert::AreEqual(int(actual_token.first), int(token.first));
 				Assert::AreEqual(token.second, actual_token.second);
 			}
+
+			wifstream fin("tokens.txt");
+			for (const auto& token : tokens)
+			{
+				token_enum t;
+				int te;
+				size_t size;
+				fin >> te;	t = token_enum(te);
+				fin >> size;
+				Assert::AreEqual<int>(token.first, t);
+				Assert::AreEqual((size_t)(token.second.length()), size);
+			}
+			//Assert::AreEqual(fin
 
 			// Make sure the END_OF_FILE is retrieved here
 			Assert::AreEqual(int(lexer.next_token().first), int(token_enum::END_OF_FILE));
@@ -42,13 +55,14 @@ namespace ProofCheckerTest
 			using token_vector = std::vector < std::pair<token_enum, std::wstring> >;
 			test(L"(α,*,e)", token_vector
 			{
+				//{ token_enum::COMMENT, L"// Comment\n" },
 				{ token_enum::L_BRACE, L"(" },
 				{ token_enum::ID, L"α" },
-				{ token_enum::COMMA, L"," },
+				{ token_enum::COMMA,			L"," },
 				{ token_enum::BIN_OPERATION, L"*" },
-				{ token_enum::COMMA, L"," },
-				{ token_enum::ID, L"e" },
-				{ token_enum::R_BRACE, L")" }
+				{ token_enum::COMMA,			L"," },
+				{ token_enum::ID,				L"e" },
+				{ token_enum::R_BRACE,		L")" }
 			});
 		}
 

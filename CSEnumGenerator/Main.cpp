@@ -3,18 +3,21 @@
 #include <string>
 #include <locale>
 
+#define ENDL "\r\n"
 using namespace std;
 
 void flush_file_content(ofstream& fout, char* file_name)
 {
 	ifstream fin;
 	fin.open(file_name, ios::binary);
-	char c;
-	c = fin.get();
-	while (!fin.eof())
+	if (!fin.is_open())
+		return;
+	for (std::string line; getline(fin, line); )
 	{
-		fout << c;
-		c = fin.get();
+		if (line[line.length() - 1] == '\r')
+			line.resize(line.length() - 1);
+		fout << "\t\t" << line << endl;
+		cout << line << endl;
 	}
 }
 
