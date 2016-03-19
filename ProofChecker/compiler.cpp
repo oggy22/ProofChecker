@@ -39,6 +39,11 @@ void lex_file(char* file_name)
 	} while (lexer.curr_token().first != token_enum::END_OF_FILE);
 }
 
+void lexing_only(char *)
+{
+	lexer_t lexer();
+}
+
 int main(int argc, char** argv)
 {
 	cout << "Proof Checker 1.0" << endl;
