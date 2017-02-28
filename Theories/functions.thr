@@ -5,7 +5,7 @@ Def. f is injection <=> (∀x,y∈A) x≠y then f(x)≠f(y)
 Def. f is surjection <=> (∀y∈B)(∃x∈A) f(x)=y
 Def. f is bijection <=> f is injection ∧ f is surjection
 
-Theorem (∃f:A->B)(f is injection) iff (∃g:B->A)(f is surjection)
+Theorem (∃f:A->B)(f is injection) iff (∃g:B->A)(g is surjection)
 Proof.
   Suppose (∃f:A->B)(f is injection)
     Let f:A->B | f is injection
